@@ -38,9 +38,28 @@ sudo docker exec -it [container_name] psql -U [postgres_user]
 sudo systemctl [start/stop] postgresql
 ```
 
-## Docker compose
+# Docker compose
+Compose is a tool for defining and running multi-container Docker applications.
 ```
 sudo docker-compose -up {-d, background mode}
+```
+
+## Start
+Stops running containers without removing them.
+```
+sudo docker-compose stop
+```
+
+## Stop
+Stops running containers without removing them.
+```
+sudo docker-compose start
+```
+
+## Down
+Stops containers and removes containers, networks, volumes, and images created by up.
+```
+sudo docker-compose down
 ```
 
 ## Docker push to Docker Hub
