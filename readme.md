@@ -22,3 +22,18 @@ important: make sure that you've a point (.) at final command.
 ```bash
 docker run -p 8080:7011 --env SPRING_PROFILES_ACTIVE=docker docker_username/image_name:image_version
 ```
+
+## Run postgres
+```
+sudo docker run --name [container_name] -d -p [custom_port]:5432 -e POSTGRES_PASSWORD=[custom_password] postgres
+```
+
+## Execute psql
+```
+sudo docker exec -it [container_name] psql -U [postgres_user]
+```
+
+## Start/Stop postgres
+```
+sudo systemctl [start/stop] postgresql
+```
