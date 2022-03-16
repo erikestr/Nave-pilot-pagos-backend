@@ -45,7 +45,7 @@ sudo docker-compose -up {-d, background mode}
 ```
 
 ## Start
-Stops running containers without removing them.
+Starts existing containers for a service.
 ```
 sudo docker-compose stop
 ```
