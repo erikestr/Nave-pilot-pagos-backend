@@ -20,7 +20,7 @@ important: make sure that you've a point (.) at final command.
 ## Run Docker imag
 
 ```bash
-docker run -p 8080:7011 --env SPRING_PROFILES_ACTIVE=docker docker_username/image_name:image_version
+docker run -p 8080:7011 --env SPRING_PROFILES_ACTIVE=docker [docker_username]/[image_name]:[image_version]
 ```
 
 ## Run postgres
@@ -36,4 +36,40 @@ sudo docker exec -it [container_name] psql -U [postgres_user]
 ## Start/Stop postgres
 ```
 sudo systemctl [start/stop] postgresql
+```
+
+## Docker compose
+```
+sudo docker-compose -up {-d, background mode}
+```
+
+## Docker push to Docker Hub
+```
+sudo docker tag [container_id] [docker_username]/[image_name]:[image_version]
+sudo docker push [docker_username]/[image_name]:[image_version]
+```
+
+# SSH
+Connection to remote VPS by SSH.
+```
+ssh [username]@[ip/domain]
+type password...
+```
+
+## SCP
+Used to manage files on VPS with SSH connection.
+
+Copy file to path - local >>> server
+```
+scp archivo.txt [username]@[ip/domain]:/home/...
+```
+
+Copy file to path - local <<< server
+```
+scp [username]@[ip/domain]:/home/archivo.txt [local/path] 
+```
+
+Copy directory to path - local >>> server
+```
+scp -r [local/path] [username]@[ip/domain]:/home/...
 ```
