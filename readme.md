@@ -64,7 +64,7 @@ sudo docker-compose down
 
 ## Docker push to Docker Hub
 ```
-sudo docker tag [container_id] [docker_username]/[image_name]:[image_version]
+sudo docker tag [image_id] [docker_username]/[image_name]:[tagname]
 sudo docker push [docker_username]/[image_name]:[image_version]
 ```
 
