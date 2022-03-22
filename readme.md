@@ -104,3 +104,34 @@ change into the `/platforms/android` folder and run `./gradlew bundleRelease`. O
 
 This outputs the bundle at `/platforms/android/app/build/outputs/bundle/release/app.aab`. Sign this bundle just like you would sign the APK and upload it to the Play Store.
 
+# Git
+
+Uploading Changes
+```
+git branch [work_branch]
+git checkout [work_branch]
+
+git add [./.../.../]
+git commit -m "Comment"
+...
+git add [./.../.../]
+git commit -m "Comment"
+...
+
+git push origin test
+```
+
+Descargar cambios con Pull
+```
+git pull origin [qa_branch]
+```
+
+Push de origin con merge ya creado
+```
+git push origin [work_branch]
+```
+
+Discard changes
+```
+git checkout -- .
+```
