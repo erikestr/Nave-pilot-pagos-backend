@@ -94,7 +94,7 @@ Copy directory to path - local >>> server
 scp -r [local/path] [username]@[ip/domain]:/home/...
 ```
 
-#Ionic Android App Bundle
+# Ionic Android App Bundle
 
 You need to have "cordova-android": 8.0.0 or later.
 
