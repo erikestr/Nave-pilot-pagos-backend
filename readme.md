@@ -93,3 +93,14 @@ Copy directory to path - local >>> server
 ```
 scp -r [local/path] [username]@[ip/domain]:/home/...
 ```
+
+#Ionic Android App Bundle
+
+You need to have "cordova-android": 8.0.0 or later.
+
+run `ionic cordova build android --prod --release` as usual.
+
+change into the `/platforms/android` folder and run `./gradlew bundleRelease`. On Windows, the file might be called gradlew.bat instead.
+
+This outputs the bundle at `/platforms/android/app/build/outputs/bundle/release/app.aab`. Sign this bundle just like you would sign the APK and upload it to the Play Store.
+
