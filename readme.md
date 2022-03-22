@@ -13,7 +13,7 @@ mvn package
 ## Create Docker image
 
 ```bash
-docker build -t docker_username/image_name:image_version .
+docker build -t [docker_username]/[image_name]:[image_version] .
 ```
 important: make sure that you've a point (.) at final command.
 
