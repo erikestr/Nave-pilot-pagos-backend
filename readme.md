@@ -24,7 +24,7 @@
 - [SSH](#ssh)
   * [SCP](#scp)
     + [Copy file to path - local >>> server](#copy-file-to-path---local--server)
-    + [Copy file to path - local <<< server](#copy-file-to-path---local--server)
+    + [Copy file to path - local <<< server](#copy-file-to-path---server--local)
     + [Copy directory to path - local >>> server](#copy-directory-to-path---local--server)
     + [Copy directory to path - server >>> local](#copy-directory-to-path---server--local)
 - [Git](#git)
