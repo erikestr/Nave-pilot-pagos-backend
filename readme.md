@@ -161,7 +161,7 @@ Used to manage files on VPS with SSH connection.
 scp archivo.txt [username]@[ip/domain]:/home/...
 ```
 
-### Copy file to path - local <<< server
+### Copy file to path - server >>> local
 ```
 scp [username]@[ip/domain]:/home/archivo.txt [local/path] 
 ```
