@@ -1,18 +1,21 @@
 # Content
 - [Nave Pilot Stripe Payments](#nave-pilot-stripe-payments)
   * [Build](#build)
+- [Docker](#docker)
   * [Create Docker image](#create-docker-image)
   * [Run Docker imag](#run-docker-imag)
   * [Run postgres](#run-postgres)
   * [Execute psql](#execute-psql)
   * [Start/Stop postgres](#start-stop-postgres)
+  * [Docker access to internal shell](#docker-access-to-internal-shell)
+  * [Docker Extract file from container](#docker-extract-file-from-container)
 - [Docker compose](#docker-compose)
   * [Start](#start)
   * [Stop](#stop)
   * [Down](#down)
   * [Docker push to Docker Hub](#docker-push-to-docker-hub)
-  * [Docker access to internal shell](#docker-access-to-internal-shell)
-  * [Docker Extract file from container](#docker-extract-file-from-container)
+  * [Docker access to internal shell](#docker-access-to-internal-shell-1)
+  * [Docker Extract file from container](#docker-extract-file-from-container-1)
 - [Postgres](#postgres)
   * [Create Database](#create-database)
   * [Create User and give permissions](#create-user-and-give-permissions)
@@ -30,6 +33,7 @@
   * [Push de origin con merge ya creado](#push-de-origin-con-merge-ya-creado)
   * [Discard changes](#discard-changes)
 
+
 # Nave Pilot Stripe Payments
 
 This project was created to use an idependet Stripe API service on Nave Pilot to provide subscription service.
@@ -41,7 +45,7 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 ```bash
 mvn package
 ```
-
+# Docker
 ## Create Docker image
 
 ```bash
@@ -65,9 +69,19 @@ sudo docker run --name [container_name] -d -p [custom_port]:5432 -e POSTGRES_PAS
 sudo docker exec -it [container_name] psql -U [postgres_user]
 ```
 
-## Start/Stop postgres
+## Start Stop postgres
 ```
 sudo systemctl [start/stop] postgresql
+```
+
+## Docker access to internal shell
+```
+docker exec -it [container_name] /bin/bash
+```
+
+## Docker Extract file from container
+```
+docker cp [container_name]:/path/FILE.sql /path/to/copy/
 ```
 
 # Docker compose
@@ -110,7 +124,6 @@ docker exec -it [container_name] /bin/bash
 ```
 docker cp [container_name]:/path/FILE.sql /path/to/copy/
 ```
-
 # Postgres
 ## Create Database
 ```
