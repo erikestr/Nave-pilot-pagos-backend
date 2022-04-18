@@ -215,3 +215,14 @@ git push origin [work_branch]
 git checkout -- .
 ```
 [*return content*](#content)
+
+
+docker exec -it [CONTAINER_NAME] /bin/bash
+
+pg_dump -U [USERNAME] -W -h localhost [DATABASE_NAVE] > /path/to/save/FILE.sql
+
+docker cp [CONTAINER_NAME]:/path/FILE.sql /path/to/copy/
+
+scp erikes@208.109.39.83:/path/FILE.sql /path/to/copy/local/
+
+psql -d [DATABASE_NAME] -f FILE.sql
