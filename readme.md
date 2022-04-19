@@ -29,8 +29,8 @@
     + [Copy directory to path - server >>> local](#copy-directory-to-path---server--local)
 - [Git](#git)
   * [Uploading Changes](#uploading-changes)
-  * [Descargar cambios con Pull](#descargar-cambios-con-pull)
-  * [Push de origin con merge ya creado](#push-de-origin-con-merge-ya-creado)
+  * [Download Changes Pull](#download-changes-pull)
+  * [Push from origin to existent merge](#push-from-origin-to-existent-merge)
   * [Discard changes](#discard-changes)
 
 
@@ -185,12 +185,12 @@ git commit -m "Comment"
 git push origin test
 ```
 
-## Descargar cambios con Pull
+## Download Changes Pull
 ```
 git pull origin [qa_branch]
 ```
 
-## Push de origin con merge ya creado
+## Push from origin to existent merge
 ```
 git push origin [work_branch]
 ```
