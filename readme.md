@@ -1,6 +1,6 @@
 # Content
-- [Nave Pilot Stripe Payments](#nave-pilot-stripe-payments)
-  * [Build](#build)
+- [Commands](#commands)
+  * [Build](#build-spring-boot-app)
 - [Docker](#docker)
   * [Create Docker image](#create-docker-image)
   * [Run Docker imag](#run-docker-imag)
