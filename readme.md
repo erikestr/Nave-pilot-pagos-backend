@@ -117,16 +117,6 @@ docker login
 sudo docker tag [image_id] [docker_username]/[image_name]:[tagname]
 sudo docker push [docker_username]/[image_name]:[image_version]
 ```
-
-## Docker access to internal shell
-```
-docker exec -it [container_name] /bin/bash
-```
-
-## Docker Extract file from container
-```
-docker cp [container_name]:/path/FILE.sql /path/to/copy/
-```
 [*return content*](#content)
 
 # Postgres
@@ -137,7 +127,7 @@ CREATE DATABASE [database];
 
 ## Create User and give permissions
 ```
-CREATE USER [usern_name] WITH ENCRYPTED PASSWORD '[user_password]';
+CREATE USER [username] WITH ENCRYPTED PASSWORD '[user_password]';
 GRANT ALL PRIVILEGES ON DATABASE [database] TO [user_name];
 ```
 
