@@ -89,6 +89,7 @@ docker cp [container_name]:/path/FILE.sql /path/to/copy/
 
 # Docker compose
 Compose is a tool for defining and running multi-container Docker applications.
+[example](docker-compose/docker-compose.yml)
 ```
 sudo docker-compose -up {-d, background mode}
 ```
