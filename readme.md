@@ -129,11 +129,16 @@ GRANT ALL PRIVILEGES ON DATABASE [database] TO [user_name];
 ## Create Backup Dump
 ```
 pg_dump -U [username] -W -h localhost [database_name] > /path/to/save/FILE.sql
+pg_dump -i -h localhost -p 5432 -U postgres -F c -b -v -f "/path/of/file.backup" [database_name]
 ```
 
-## Run .sql script
+## Run backup script
 ```
 psql -d [database_name] -f FILE.sql
+```
+
+## Run backup script
+```
 ```
 [*return content*](#content)
 
