@@ -1,6 +1,7 @@
 # Content
 - [Commands](#commands)
   * [Build](#build-spring-boot-app)
+  * [PATH](#path)
 - [Docker](#docker)
   * [Create Docker image](#create-docker-image)
   * [Run Docker imag](#run-docker-imag)
@@ -38,6 +39,11 @@
 ## Build Spring Boot App
 ```bash
 mvn package
+```
+## Path
+```
+export PATH="/path/to/add:$PATH"
+source ~/.bashrc
 ```
 [*return content*](#content)
 
